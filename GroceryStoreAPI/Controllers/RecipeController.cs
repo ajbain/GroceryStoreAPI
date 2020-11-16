@@ -11,7 +11,7 @@ namespace GroceryStoreAPI.Controllers
 {
     public class RecipeController : ApiController
     {
-        private readonly ApplicationDbRecipe _recipe = new ApplicationDbRecipe();
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
         // create
         [HttpPost]
         public async Task<IHttpActionResult> Create(Recipe recipe)
@@ -22,7 +22,7 @@ namespace GroceryStoreAPI.Controllers
             // return unauthorized //403
             if (ModelState.IsValid)
             {
-                _recipeIngredients.Add(recipe);
+                _context.Recipe.Add(recipe);
                 await _context.SaveChangesAsync();
                 return Ok();
             }

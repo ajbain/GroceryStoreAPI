@@ -15,6 +15,7 @@ namespace GroceryStoreAPI.Models
         public DietType dietType { get; set; }
         public bool hasDietTypeOptions { get; set; }
         public int TimeToPrepare { get; set; }
+
        // public int TimeToCook { get; set; }
 
     }
