@@ -33,7 +33,7 @@ namespace GroceryStoreAPI.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<Ingredient> Ingredients {get; set;}
+        public DbSet<Ingredients> Ingredients {get; set;}
         //public DbSet<Recipe> Recipe { get; set; }
        // public DbSet<Shopper> Shopper { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
