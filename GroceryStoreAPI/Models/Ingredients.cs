@@ -9,7 +9,6 @@ namespace GroceryStoreAPI.Models
 
     public enum DietType { GlutenFree, Vegan, Vegetarian, DairyFree }
     public enum GroceryLocation { Frozen, Meat, Deli, Bakery, Produce, Dairy, Snacks, Condiments }
-
     public class Ingredients
         {
               [Key]
