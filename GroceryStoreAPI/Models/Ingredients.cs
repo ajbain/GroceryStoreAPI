@@ -25,5 +25,5 @@ namespace GroceryStoreAPI.Models
 
              public int UPC { get; set; }
         }
-    
+
 }
