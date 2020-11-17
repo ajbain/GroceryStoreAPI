@@ -54,7 +54,7 @@ namespace GroceryStoreAPI.Controllers
         }
         // Update
         [HttpPut]
-        public async Task<IHttpActionResult> UpdateRestaurant([FromUri] int id, [FromBody] Ingredients model)
+        public async Task<IHttpActionResult> UpdateIngredient([FromUri] int id, [FromBody] Ingredients model)
         {
             if (!ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace GroceryStoreAPI.Controllers
         // Delete
 
         [HttpDelete]
-        public async Task<IHttpActionResult> DeleteRestaurantById(int id)
+        public async Task<IHttpActionResult> DeleteIngredientById(int id)
         {
             Ingredients ingredient = await _context.Ingredients.FindAsync(id);
 
