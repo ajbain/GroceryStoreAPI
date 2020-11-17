@@ -243,6 +243,8 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Recipe.cs" />
+    <Compile Include="Models\RecipeIngredient.cs" />
+    <Compile Include="Models\RecipeIngredientController.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\Ingredients.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

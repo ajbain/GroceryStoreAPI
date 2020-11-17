@@ -54,7 +54,7 @@ namespace GroceryStoreAPI.Controllers
         }
         // Update
         [HttpPut]
-        public async Task<IHttpActionResult> UpdateRestaurant([FromUri] int id, [FromBody] Ingredients model)
+        public async Task<IHttpActionResult> UpdateIngredient([FromUri] int id, [FromBody] Ingredients model)
         {
             if (!ModelState.IsValid)
             {
