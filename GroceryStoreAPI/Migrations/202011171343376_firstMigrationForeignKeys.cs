@@ -3,7 +3,7 @@ namespace GroceryStoreAPI.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class firstMigrationForeignKeys : DbMigration
     {
         public override void Up()
         {
@@ -11,12 +11,26 @@ namespace GroceryStoreAPI.Migrations
                 "dbo.Ingredients",
                 c => new
                     {
-                        Name = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false),
                         Quantity = c.Int(nullable: false),
                         Price = c.Double(nullable: false),
                         UPC = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Name);
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Recipe",
+                c => new
+                    {
+                        RecipeNum = c.String(nullable: false, maxLength: 128),
+                        RecipeName = c.String(nullable: false),
+                        Directions = c.String(),
+                        dietType = c.Int(nullable: false),
+                        hasDietTypeOptions = c.Boolean(nullable: false),
+                        TimeToPrepare = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.RecipeNum);
             
             CreateTable(
                 "dbo.IdentityRole",
@@ -41,6 +55,19 @@ namespace GroceryStoreAPI.Migrations
                 .ForeignKey("dbo.ApplicationUser", t => t.ApplicationUser_Id)
                 .Index(t => t.IdentityRole_Id)
                 .Index(t => t.ApplicationUser_Id);
+            
+            CreateTable(
+                "dbo.Transaction",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        IngredientID = c.Int(nullable: false),
+                        DateOfTransaction = c.DateTime(nullable: false),
+                        Quantity = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Ingredients", t => t.IngredientID, cascadeDelete: true)
+                .Index(t => t.IngredientID);
             
             CreateTable(
                 "dbo.ApplicationUser",
@@ -95,16 +122,20 @@ namespace GroceryStoreAPI.Migrations
             DropForeignKey("dbo.IdentityUserRole", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserLogin", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserClaim", "ApplicationUser_Id", "dbo.ApplicationUser");
+            DropForeignKey("dbo.Transaction", "IngredientID", "dbo.Ingredients");
             DropForeignKey("dbo.IdentityUserRole", "IdentityRole_Id", "dbo.IdentityRole");
             DropIndex("dbo.IdentityUserLogin", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserClaim", new[] { "ApplicationUser_Id" });
+            DropIndex("dbo.Transaction", new[] { "IngredientID" });
             DropIndex("dbo.IdentityUserRole", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "IdentityRole_Id" });
             DropTable("dbo.IdentityUserLogin");
             DropTable("dbo.IdentityUserClaim");
             DropTable("dbo.ApplicationUser");
+            DropTable("dbo.Transaction");
             DropTable("dbo.IdentityUserRole");
             DropTable("dbo.IdentityRole");
+            DropTable("dbo.Recipe");
             DropTable("dbo.Ingredients");
         }
     }

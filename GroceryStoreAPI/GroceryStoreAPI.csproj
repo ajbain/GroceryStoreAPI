@@ -214,13 +214,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011162027282_InitialCreate.cs" />
-    <Compile Include="Migrations\202011162027282_InitialCreate.Designer.cs">
-      <DependentUpon>202011162027282_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011162039263_first.cs" />
-    <Compile Include="Migrations\202011162039263_first.Designer.cs">
-      <DependentUpon>202011162039263_first.cs</DependentUpon>
+    <Compile Include="Migrations\202011171343376_firstMigrationForeignKeys.cs" />
+    <Compile Include="Migrations\202011171343376_firstMigrationForeignKeys.Designer.cs">
+      <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202011162157329_second.cs" />
     <Compile Include="Migrations\202011162157329_second.Designer.cs">
@@ -343,11 +339,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011162027282_InitialCreate.resx">
-      <DependentUpon>202011162027282_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011162039263_first.resx">
-      <DependentUpon>202011162039263_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011171343376_firstMigrationForeignKeys.resx">
+      <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011162157329_second.resx">
       <DependentUpon>202011162157329_second.cs</DependentUpon>
