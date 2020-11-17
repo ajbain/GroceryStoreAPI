@@ -218,6 +218,26 @@
     <Compile Include="Migrations\202011171343376_firstMigrationForeignKeys.Designer.cs">
       <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011162157329_second.cs" />
+    <Compile Include="Migrations\202011162157329_second.Designer.cs">
+      <DependentUpon>202011162157329_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011162346021_addedtransaction.cs" />
+    <Compile Include="Migrations\202011162346021_addedtransaction.Designer.cs">
+      <DependentUpon>202011162346021_addedtransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011170106260_updat1.cs" />
+    <Compile Include="Migrations\202011170106260_updat1.Designer.cs">
+      <DependentUpon>202011170106260_updat1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011171528569_addedReci.cs" />
+    <Compile Include="Migrations\202011171528569_addedReci.Designer.cs">
+      <DependentUpon>202011171528569_addedReci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011171549156_three.cs" />
+    <Compile Include="Migrations\202011171549156_three.Designer.cs">
+      <DependentUpon>202011171549156_three.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -321,6 +341,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011171343376_firstMigrationForeignKeys.resx">
       <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011162157329_second.resx">
+      <DependentUpon>202011162157329_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011162346021_addedtransaction.resx">
+      <DependentUpon>202011162346021_addedtransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011170106260_updat1.resx">
+      <DependentUpon>202011170106260_updat1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011171528569_addedReci.resx">
+      <DependentUpon>202011171528569_addedReci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011171549156_three.resx">
+      <DependentUpon>202011171549156_three.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
