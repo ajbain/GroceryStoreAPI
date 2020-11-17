@@ -1,23 +1,25 @@
 # GroceryStoreAPI Team Happy
 
 ## Introduction:
-The aim of this project was implement AGILE methodology, as well as team Git practices into an API application. Our team chose a Grocery Store API, making classes for Ingredients, Recipes, and Transactions. \\
+The aim of this project was implement AGILE methodology, as well as team Git practices into an API application. Our team chose a Grocery Store API, making classes for Ingredients, Recipes, and Transactions. 
 
-This project implements CRUD into our database creation, as well as testing endpoints of our APIs using Postman. We created a google sheet that included tickets/ user stories to help us understand the AGILE methodology more. Postman Port number 44326\\
+This project implements CRUD into our database creation, as well as testing endpoints of our APIs using Postman. We created a google sheet that included tickets/ user stories to help us understand the AGILE methodology more. Postman Port number 44326
 
-We then assigned points to these user stories to figure out the effort and time commitment these tickets would take. this was done in a shared Google Doc you cn see at this URL. https://docs.google.com/spreadsheets/d/1hq0anjxkZPiXSHoJskFoaV_RJcUS15_oT-f6nk0hH6M/edit#gid=0\\
+We then assigned points to these user stories to figure out the effort and time commitment these tickets would take. this was done in a shared Google Doc you cn see at this URL. https://docs.google.com/spreadsheets/d/1hq0anjxkZPiXSHoJskFoaV_RJcUS15_oT-f6nk0hH6M/edit#gid=0
 
 ## Steps
-We then Created a Trello board based off of this initial google doc plan that can be found at this URL https://trello.com/b/TzIG1oni/grocery-list you will need a trello account to view this borad and may need acces granted by our team, we are new to this and not entirely sure if those outside the team can view it. Please contact a member of the Happy team if you have access issues Jim Created the Board so he is the best contact.\
+We then Created a Trello board based off of this initial google doc plan that can be found at this URL https://trello.com/b/TzIG1oni/grocery-list you will need a trello account to view this borad and may need acces granted by our team, we are new to this and not entirely sure if those outside the team can view it. Please contact a member of the Happy team if you have access issues Jim Created the Board so he is the best contact.
 
 ## Issues
-We ran into issues in trying to tie the API to a console as both could not run within the same sulotion cuncurrently.\
+We ran into issues in trying to tie the API to a console as both could not run within the same sulotion cuncurrently.
 Our team also needed to create a class for ingredients list for the recipe class to use as a joiner tabel to create a one to one relationship with where the joiner table pulls in many items into a list but is a single item for the recipe class to reference.
 
-## Learning points
-We have learned more about
+We also ran into issues with our planned recipe class as we needed a joiner tabl with a one to many relationship that we could then tie to our recipe for a one to one relationship.
 
-We also ran into issues with our planned recipe class as we needed a joiner tabl with a one to many relationship that we could then tie to our recipe for a one to one relationship.\
+## Learning points
+We have learned more about merging solutions in Github, Agile planning, and are becoming more confident backend software developers during this project.
+
+
 ## Resources
 Resources used during project where visual studios using C# in dot net framework version 4.8 this projects is an API ASP.Net Web Application with individual user accounts.
 We used Google Docs to arrange our thoughts in the planning phase https://docs.google.com/spreadsheets/d/1hq0anjxkZPiXSHoJskFoaV_RJcUS15_oT-f6nk0hH6M/edit#gid=0
