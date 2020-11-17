@@ -38,6 +38,7 @@ namespace GroceryStoreAPI.Models
         public DbSet<Recipe> Recipe { get; set; }
         //public DbSet<Shopper> Shopper { get; set; }
         public DbSet<Transaction> Transaction { get; set; }
+        public DbSet<RecipeIngredient> RecipeIngredients { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
