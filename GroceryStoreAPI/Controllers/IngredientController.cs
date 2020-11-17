@@ -35,11 +35,11 @@ namespace GroceryStoreAPI.Controllers
         [HttpGet]
         public async Task<IHttpActionResult> Get()
         {
-            List<Ingredients> ingredient = await _context.Ingredients.ToListAsync();
+            List<Ingredients> Ingredients = await _context.Ingredients.ToListAsync();
 
 
 
-            return Ok(ingredient);
+            return Ok(Ingredients);
         }
         // GET BY ID
         [HttpGet]
@@ -72,6 +72,7 @@ namespace GroceryStoreAPI.Controllers
             ingredient.Quantity = model.Quantity;
             ingredient.Price = model.Price;
             ingredient.UPC = model.UPC;
+            ingredient.Location = model.Location;
 
 
             if (await _context.SaveChangesAsync() == 1)
@@ -89,14 +90,14 @@ namespace GroceryStoreAPI.Controllers
         [HttpDelete]
         public async Task<IHttpActionResult> DeleteRestaurantById(int id)
         {
-            Ingredients restaurant = await _context.Ingredients.FindAsync(id);
+            Ingredients ingredient = await _context.Ingredients.FindAsync(id);
 
-            if (restaurant == null)
+            if (ingredient == null)
             {
                 return NotFound(); 
             }
 
-            _context.Ingredients.Remove(restaurant);
+            _context.Ingredients.Remove(ingredient);
 
             if (await _context.SaveChangesAsync() == 1)
             {
