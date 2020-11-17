@@ -7,11 +7,11 @@ namespace GroceryStoreAPI.Models
     public class Recipe
     {
         [Key]
-        public int RecipeNum { get; set; }
+        public int Id{ get; set; }
         [Required]
-       // public string Name { get; set; }
+        public string Name { get; set; }
         public string Directions { get; set; }
-
+        public virtual List<RecipeIngredient> IngredientsList { get; set; }
         public DietType DietType { get; set; }
         public bool HasDietTypeOptions { get; set; }
         public int TimeToPrepare { get; set; }
