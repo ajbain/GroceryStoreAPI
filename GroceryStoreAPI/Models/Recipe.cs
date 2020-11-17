@@ -7,23 +7,13 @@ namespace GroceryStoreAPI.Models
     public class Recipe
     {
         [Key]
-        public int Id { get; set; }
+        public int RecipeNum { get; set; }
         [Required]
-        public string RecipeName { get; set; }
+       // public string Name { get; set; }
         public string Directions { get; set; }
 
-       
-
-        //public List<Ingredients> IngredientList = new List<Ingredients>();
-
-        //List<Ingredients> IngredientsList()
-        //{
-        //    List<string> Ingredients = new List<string>();
-       //ingredients.Add("Onions");
-       // return Ingredients.
-        //}
-        public DietType dietType { get; set; }
-        public bool hasDietTypeOptions { get; set; }
+        public DietType DietType { get; set; }
+        public bool HasDietTypeOptions { get; set; }
         public int TimeToPrepare { get; set; }
 
       
