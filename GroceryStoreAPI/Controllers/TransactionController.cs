@@ -20,7 +20,7 @@ namespace GroceryStoreAPI.Controllers
         {
             if (ModelState.IsValid)
             {
-                Ingredients ingredients = await _context.Ingredients.FindAsync(transaction.IngredientID);
+                Ingredients ingredients = await _context.Ingredients.FindAsync(transaction.IngredientId);
 
                 if(ingredients == null)
                 {
