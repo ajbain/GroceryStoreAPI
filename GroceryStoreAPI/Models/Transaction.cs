@@ -12,11 +12,11 @@ namespace GroceryStoreAPI.Models
         [Key]
         public int Id { get; set; }
 
-        //[Required]
-        //public int IngredientID { get; set; }
+        [Required]
+       public int IngredientID { get; set; }
         
-        //[ForeignKey(nameof(IngredientID))]
-        //public virtual Ingredients Ingredients { get; set; }
+        [ForeignKey(nameof(IngredientID))]
+        public virtual Ingredients Ingredients { get; set; }
 
         [DataType(DataType.DateTime)]
         public DateTime DateOfTransaction { get; set; }

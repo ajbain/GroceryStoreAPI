@@ -10,7 +10,6 @@ namespace GroceryStoreAPI.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "GroceryStoreAPI.Models.ApplicationDbContext";
         }
 
         protected override void Seed(GroceryStoreAPI.Models.ApplicationDbContext context)

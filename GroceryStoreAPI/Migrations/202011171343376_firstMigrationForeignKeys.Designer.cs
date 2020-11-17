@@ -7,13 +7,13 @@ namespace GroceryStoreAPI.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class firstMigrationForeignKeys : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(firstMigrationForeignKeys));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011162039263_first"; }
+            get { return "202011171343376_firstMigrationForeignKeys"; }
         }
         
         string IMigrationMetadata.Source

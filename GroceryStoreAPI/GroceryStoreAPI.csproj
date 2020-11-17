@@ -207,37 +207,24 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-
     <Compile Include="Controllers\RecipeController.cs" />
-
     <Compile Include="Controllers\TransactionController.cs" />
-
     <Compile Include="Controllers\IngredientController.cs" />
-
-
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011162027282_InitialCreate.cs" />
-    <Compile Include="Migrations\202011162027282_InitialCreate.Designer.cs">
-      <DependentUpon>202011162027282_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011162039263_first.cs" />
-    <Compile Include="Migrations\202011162039263_first.Designer.cs">
-      <DependentUpon>202011162039263_first.cs</DependentUpon>
+    <Compile Include="Migrations\202011171343376_firstMigrationForeignKeys.cs" />
+    <Compile Include="Migrations\202011171343376_firstMigrationForeignKeys.Designer.cs">
+      <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-
-   
     <Compile Include="Models\Recipe.cs" />
-
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\Ingredients.cs" />
-
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -332,11 +319,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011162027282_InitialCreate.resx">
-      <DependentUpon>202011162027282_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011162039263_first.resx">
-      <DependentUpon>202011162039263_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011171343376_firstMigrationForeignKeys.resx">
+      <DependentUpon>202011171343376_firstMigrationForeignKeys.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
