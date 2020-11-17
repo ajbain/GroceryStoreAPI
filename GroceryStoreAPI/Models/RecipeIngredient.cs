@@ -9,15 +9,18 @@ namespace GroceryStoreAPI.Models
 {
     public class RecipeIngredient
     {
-        [Key]
-        public int Id { get; set; }
+       [Key]
+       public int Id { get; set; }
+        [ForeignKey(nameof(Recipe))]
+
         public int RecipeID { get; set; }
-        [ForeignKey(nameof(RecipeID))]
+        public virtual Recipe Recipe { get; set; }
 
         [Required]
+        [ForeignKey(nameof(Ingredients))]
         public int IngredientID { get; set; }
 
-        [ForeignKey(nameof(IngredientID))]
+       
         public virtual Ingredients Ingredients { get; set; }
     }
 }
